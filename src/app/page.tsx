@@ -1,5 +1,14 @@
+import { Fragment } from "react";
+
+import { Header, Hero } from "@/sections";
+
 const Page = () => {
-  return <h1 className="bg-blue-300">Hello world</h1>;
+  return (
+    <Fragment>
+      <Header />
+      <Hero />
+    </Fragment>
+  );
 };
 
 export default Page;

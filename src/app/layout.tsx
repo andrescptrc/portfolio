@@ -1,12 +1,22 @@
 import { ReactNode } from "react";
 
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope, Source_Code_Pro } from "next/font/google";
 import classNames from "classnames";
 
 import "./globals.css";
 
-const manrope = Manrope({ subsets: ["latin"] });
+const manropes = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
+
+const source_code_pro = Source_Code_Pro({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-source-code-pro",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +26,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={classNames("bg-black-primary", manrope.className)}>
+      <body
+        className={classNames(
+          "bg-black-primary bg-stars-group mx-4",
+          manropes.className,
+          source_code_pro.className,
+        )}
+      >
         {children}
       </body>
     </html>
