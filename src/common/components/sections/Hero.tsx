@@ -2,7 +2,7 @@ import { Download, GitHub, Linkedin } from "react-feather";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-white-full text-center">
+    <div className="flex flex-col items-center text-white-full text-center mb-28">
       <p className="text-blue-300 font-manrope font-semibold text-lg">
         Front-end developer out of this world
       </p>
