@@ -1,19 +1,25 @@
-import classNames from "classnames";
 import Image from "next/image";
 
-const ExperienceCard = ({ isLast }: ExperienceCardProps) => {
+import classNames from "classnames";
+
+const ExperienceCard = ({ image, isLast }: ExperienceCardProps) => {
   return (
     <li className="text-left flex gap-6">
-      <div className={classNames("w-max flex flex-col justify-center  pt-10")}>
+      <div
+        className={classNames(
+          { "-mb-[80px]": !isLast },
+          "w-max flex flex-col justify-center pt-10"
+        )}
+      >
         <div className="w-max">
-          <Image
-            src="/small-planet-1.png"
-            width="24"
-            height="24"
-            alt="small-planet-1"
-          />
+          <Image src={image} width="24" height="24" alt={image} />
         </div>
-        {!isLast && <hr className="w-[1px] h-full bg-white-darkest ml-3" />}
+        <hr
+          className={classNames(
+            { "w-0": isLast },
+            "w-[1px] h-full bg-white-darkest ml-3 mt-4"
+          )}
+        />
       </div>
       <div>
         <div className="mb-4">
@@ -36,6 +42,7 @@ const ExperienceCard = ({ isLast }: ExperienceCardProps) => {
 };
 
 type ExperienceCardProps = {
+  image: string;
   isLast?: boolean;
 };
 
