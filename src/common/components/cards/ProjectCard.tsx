@@ -3,14 +3,25 @@ import Image from "next/image";
 import { TechnologyItem } from "../items";
 import { Button } from "../buttons";
 
-const ProjectCard = () => {
+const ProjectCard = ({ image, hasRing }: ProjectCardProps) => {
   return (
     <li>
-      <div className="flex justify-center mb-6">
-        <Image src="/project-1.svg" width={358} height={300} alt="Project 1" />
+      <div className="flex justify-center mb-6 w-max relative">
+        {hasRing && (
+          <Image
+            src="/ring.svg"
+            className="absolute -top-[9%] -left-[7%] w-[42%]"
+            width="170"
+            height="171"
+            alt="Ring"
+          />
+        )}
+        <Image src={image} width="358" height="300" alt="Project 1" />
       </div>
       <div className="text-white-full text-center mb-4">
-        <h2 className="font-bold text-3xl mb-2">Name of the project</h2>
+        <h2 className="font-bold text-white-full text-3xl mb-2">
+          Name of the project
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
           mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
@@ -28,6 +39,11 @@ const ProjectCard = () => {
       </div>
     </li>
   );
+};
+
+type ProjectCardProps = {
+  image: string;
+  hasRing?: boolean;
 };
 
 export default ProjectCard;

@@ -2,12 +2,13 @@ import { ProjectCard } from "../cards";
 
 const Projects = () => {
   return (
-    <ul className="flex flex-col gap-16">
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-      <ProjectCard />
-    </ul>
+    <section>
+      <ul className="flex flex-col gap-16">
+        <ProjectCard image="/project-1.png" />
+        <ProjectCard image="/project-2.png" hasRing />
+        <ProjectCard image="/project-3.png" />
+      </ul>
+    </section>
   );
 };
 

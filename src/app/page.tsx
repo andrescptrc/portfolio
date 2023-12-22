@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { Header, Hero, Projects } from "@/sections";
+import { Experience, Header, Hero, Projects } from "@/sections";
 
 const Page = () => {
   return (
@@ -8,6 +8,7 @@ const Page = () => {
       <Header />
       <Hero />
       <Projects />
+      <Experience />
     </Fragment>
   );
 };

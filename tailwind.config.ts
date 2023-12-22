@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         manrope: ["var(--font-manrope)"],
-        source: ["var(--source-code-pro)"],
+        source: ["var(--font-source-code-pro)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

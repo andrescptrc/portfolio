@@ -16,8 +16,15 @@
   }
 }
 
-h1 {
-  @apply font-source;
+h1,
+h2,
+h3,
+h4 {
+  @apply font-source text-blue-300 font-semibold text-lg;
+}
+
+section {
+  @apply mb-28;
 }
 
 p {

@@ -2,11 +2,11 @@ import { Download, GitHub, Linkedin } from "react-feather";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-white-full text-center mb-28">
+    <section className="flex flex-col items-center text-white-full text-center">
       <p className="text-blue-300 font-manrope font-semibold text-lg">
         Front-end developer out of this world
       </p>
-      <h2 className="font-source text-6xl font-semibold">Brayan Carreño</h2>
+      <p className="font-source text-6xl font-semibold">Brayan Carreño</p>
       <hr className="text-blue-300 w-full my-6" />
       <p className="font-manrope mb-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
@@ -27,7 +27,7 @@ const Hero = () => {
           <p>Resume</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 import "./globals.css";
 
-const manropes = Manrope({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-manrope",
@@ -29,8 +29,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={classNames(
           "bg-black-primary bg-stars-group mx-4",
-          manropes.className,
-          source_code_pro.className,
+          manrope.variable,
+          source_code_pro.variable,
         )}
       >
         {children}
