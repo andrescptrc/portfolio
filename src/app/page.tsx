@@ -1,6 +1,13 @@
 import { Fragment } from "react";
 
-import { Education, Experience, Header, Hero, Projects } from "@/sections";
+import {
+  Contact,
+  Education,
+  Experience,
+  Header,
+  Hero,
+  Projects,
+} from "@/sections";
 
 const Page = () => {
   return (
@@ -10,6 +17,7 @@ const Page = () => {
       <Projects />
       <Experience />
       <Education />
+      <Contact />
     </Fragment>
   );
 };
