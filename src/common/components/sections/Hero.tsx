@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Download, GitHub, Linkedin } from "react-feather";
 
 const Hero = () => {
@@ -14,18 +16,27 @@ const Hero = () => {
         mattis ligula consectetur, ultrices mauris.
       </p>
       <div className="flex justify-between gap-6 text-white-dark text-base font-manrope">
-        <div className="flex gap-[10px]">
-          <GitHub />
-          <p>Github</p>
-        </div>
-        <div className="flex gap-[10px]">
-          <Linkedin />
-          <p>Linkedin</p>
-        </div>
-        <div className="flex gap-[10px]">
-          <Download />
-          <p>Resume</p>
-        </div>
+        <Link href="https://github.com/andrescptrc" target="_blank">
+          <div className="flex gap-[10px]">
+            <GitHub />
+            <p>Github</p>
+          </div>
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/brayan-carre%C3%B1o-460b70217"
+          target="_blank"
+        >
+          <div className="flex gap-[10px]">
+            <Linkedin />
+            <p>Linkedin</p>
+          </div>
+        </Link>
+        <Link href="/curriculum/brayan-carreño-resume.pdf" target="_blank">
+          <div className="flex gap-[10px]">
+            <Download />
+            <p>Resume</p>
+          </div>
+        </Link>
       </div>
     </section>
   );
