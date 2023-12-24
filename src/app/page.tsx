@@ -4,6 +4,7 @@ import {
   Contact,
   Education,
   Experience,
+  Footer,
   Header,
   Hero,
   Projects,
@@ -18,6 +19,7 @@ const Page = () => {
       <Experience />
       <Education />
       <Contact />
+      <Footer />
     </Fragment>
   );
 };
