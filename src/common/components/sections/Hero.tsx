@@ -5,8 +5,8 @@ import { Download, GitHub, Linkedin } from "react-feather";
 
 const Hero = ({ children }: HeroProps) => {
   return (
-    <div className="sm:flex sm:gap-20 sm:m-8">
-      <section className="flex flex-col items-center text-white-full text-center">
+    <div className="sm:flex sm:gap-20 sm:m-72">
+      <section className="flex flex-col items-center sm:items-start text-white-full text-center sm:sticky sm:top-28 sm:self-start sm:text-left">
         <p className="text-blue-300 font-manrope font-semibold text-lg">
           Front-end developer out of this world
         </p>

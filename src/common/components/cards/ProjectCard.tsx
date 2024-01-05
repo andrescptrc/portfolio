@@ -6,7 +6,7 @@ import { Button } from "../buttons";
 const ProjectCard = ({ image, hasRing }: ProjectCardProps) => {
   return (
     <li>
-      <div className="flex justify-center mb-6 w-max relative">
+      <div className="flex justify-center max-w-xl sm:w-auto mb-6 relative">
         {hasRing && (
           <Image
             src="/ring.svg"
@@ -16,7 +16,7 @@ const ProjectCard = ({ image, hasRing }: ProjectCardProps) => {
             alt="Ring"
           />
         )}
-        <Image src={image} width="358" height="300" alt="Project 1" />
+        <Image src={image} className="w-full h-full" width="473" height="396" alt="Project 1" />
       </div>
       <div className="text-white-full text-center mb-4">
         <h2 className="font-bold text-white-full text-3xl mb-2">
