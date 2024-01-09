@@ -1,8 +1,8 @@
-import { ProjectCard } from "../cards";
+import { ProjectCard } from '../cards';
 
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <ul className="flex flex-col gap-16">
         <ProjectCard image="/project-1-desktop.png" />
         <ProjectCard image="/project-2.png" hasRing />

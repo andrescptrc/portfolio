@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/sections": ["./src/common/components/sections/index"]
+      "@/sections": ["./src/common/components/sections/index"],
+      "@/lib/*": ["./src/common/lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

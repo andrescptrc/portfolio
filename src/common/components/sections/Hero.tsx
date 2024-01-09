@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { ReactNode } from "react";
+import Link from 'next/link';
+import { ReactNode } from 'react';
 
-import { Download, GitHub, Linkedin } from "react-feather";
+import { Download, GitHub, Linkedin } from 'react-feather';
+import { DefaultNavigation } from '../navigations';
 
 const Hero = ({ children }: HeroProps) => {
   return (
@@ -13,21 +14,18 @@ const Hero = ({ children }: HeroProps) => {
         <p className="font-source text-6xl font-semibold">Brayan Carreño</p>
         <hr className="text-blue-300 w-full my-6" />
         <p className="font-manrope mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in
+          hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur,
+          ultrices mauris.
         </p>
-        <div className="flex justify-between gap-6 text-white-dark text-base font-manrope">
+        <div className="flex justify-between gap-6 text-white-dark text-base font-manrope mb-16">
           <Link href="https://github.com/andrescptrc" target="_blank">
             <div className="flex gap-[10px]">
               <GitHub />
               <p>Github</p>
             </div>
           </Link>
-          <Link
-            href="https://www.linkedin.com/in/brayan-carre%C3%B1o-460b70217"
-            target="_blank"
-          >
+          <Link href="https://www.linkedin.com/in/brayan-carre%C3%B1o-460b70217" target="_blank">
             <div className="flex gap-[10px]">
               <Linkedin />
               <p>Linkedin</p>
@@ -40,6 +38,7 @@ const Hero = ({ children }: HeroProps) => {
             </div>
           </Link>
         </div>
+        <DefaultNavigation />
       </section>
       {children}
     </div>

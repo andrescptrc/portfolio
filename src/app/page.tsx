@@ -1,6 +1,5 @@
-import { Fragment } from "react";
-
-import { Footer, Header, Hero, PageContent } from "@/sections";
+import { Fragment } from 'react';
+import { Footer, Header, Hero, PageContent } from '@/sections';
 
 const Page = () => {
   return (

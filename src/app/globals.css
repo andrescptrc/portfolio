@@ -16,6 +16,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
 h1,
 h2,
 h3,
